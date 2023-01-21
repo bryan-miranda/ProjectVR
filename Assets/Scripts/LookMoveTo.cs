@@ -11,14 +11,11 @@ public class LookMoveTo : MonoBehaviour
 
     public bool moveForward;
 
-    public AudioSource intro;
-
     private CharacterController _miCC;
 
     // Start is called before the first frame update
     void Start()
     {
-        intro.Play();
         _miCC = GetComponent<CharacterController>();
     }
 

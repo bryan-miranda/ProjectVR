@@ -13,7 +13,7 @@ public class CameraPointerManager : MonoBehaviour
 
 
 
-    private const float _maxDistance = 5;
+    private const float _maxDistance = 30;
     private GameObject _gazedAtObject = null;
 
     private readonly string interactableTag = "Interactable";
