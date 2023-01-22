@@ -21,7 +21,8 @@ public class Gun : MonoBehaviour
     {
         while (true)
         {
-            Shoot();
+            StartCoroutine(Shoot());
+            
             yield return new WaitForSeconds(3);
         }
     }
@@ -31,7 +32,7 @@ public class Gun : MonoBehaviour
     {
     }
 
-    public void Shoot()
+    public IEnumerator Shoot()
     {
         RaycastHit hit;
         if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, range))
@@ -40,8 +41,11 @@ public class Gun : MonoBehaviour
 
             if (enemy != null)
             {
+                GetComponent<Animator>().Play("gunRecoil");
                 muzzleFlash.Play();
                 shot.Play();
+                yield return new WaitForSeconds(0.2f);
+                GetComponent<Animator>().Play("New State");
                 Debug.Log(hit.transform.name);
                 enemy.TakeDamage(damage);
             }
