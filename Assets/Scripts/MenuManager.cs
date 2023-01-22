@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public string button;
+    public AudioSource menuMusic;
+
     private Renderer _myRenderer;
     private Vector3 _startingPosition;
 
     void Start()
     {
-        _startingPosition = transform.parent.localPosition;
+        //_startingPosition = transform.parent.localPosition;
         _myRenderer = GetComponent<Renderer>();
     }
 
@@ -23,12 +25,11 @@ public class MenuManager : MonoBehaviour
 
     public void OnPointerEnter()
     {
-
     }
 
     public void OnPointerClick()
     {
-        
+        menuMusic.Stop();
         if (button == "Salir")
         {
 #if UNITY_EDITOR

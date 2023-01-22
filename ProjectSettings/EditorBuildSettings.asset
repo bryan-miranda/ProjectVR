@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: f2bcdd54ef769294fb3743d7b04f8451
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: e97e9da56f7947f4a800e087d55b46b6
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 923c6af147a5f1449a820cd023672258,
       type: 2}
