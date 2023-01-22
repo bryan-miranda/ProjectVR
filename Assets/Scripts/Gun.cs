@@ -46,7 +46,6 @@ public class Gun : MonoBehaviour
                 shot.Play();
                 yield return new WaitForSeconds(0.2f);
                 GetComponent<Animator>().Play("New State");
-                Debug.Log(hit.transform.name);
                 enemy.TakeDamage(damage);
             }
         }   
