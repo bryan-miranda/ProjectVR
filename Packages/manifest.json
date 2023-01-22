@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.google.xr.cardboard": "file:D:/la u/verano 2022/realidad virtual/cardboard-xr-plugin-master/cardboard-xr-plugin-master",
+    "com.google.xr.cardboard": "file:C:/Users/Extremetech SC/Desktop/Universidad/Verano 2022/VR/cardboard-xr-plugin-1.19.0",
     "com.unity.collab-proxy": "1.17.7",
     "com.unity.ide.rider": "3.0.16",
     "com.unity.ide.visualstudio": "2.0.16",
