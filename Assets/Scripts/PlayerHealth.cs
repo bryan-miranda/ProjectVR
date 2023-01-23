@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
     public void Heal(float amount)
     {
         health += amount;
-        if (health < MAX_HEALTH){
+        if (health > MAX_HEALTH){
             health = MAX_HEALTH;
         }
         healthbar.fillAmount = health / MAX_HEALTH;
