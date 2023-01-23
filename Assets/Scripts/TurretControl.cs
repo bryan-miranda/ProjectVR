@@ -38,7 +38,13 @@ public class TurretControl : MonoBehaviour
 
     }
 
-    IEnumerator TurretShoot()
+    public void Death()
+    {
+        StopCoroutine(TurretShoot());
+        closeEnough = false;
+    }
+
+    public IEnumerator TurretShoot()
     {
         while (true)
         {

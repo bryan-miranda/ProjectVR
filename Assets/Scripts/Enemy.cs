@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
     {
         gameObject.transform.GetComponent<Collider>().enabled = false;
         gameObject.transform.GetComponent<TurretControl>().enabled = false;
+        gameObject.transform.GetComponent<TurretControl>().Death();
         gameObject.transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.transform.GetChild(0).transform.GetChild(0).gameObject.GetComponent<Renderer>().enabled = false;
         gameObject.transform.GetChild(1).gameObject.GetComponent<Renderer>().enabled = false;

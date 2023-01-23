@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.050580334, g: 0.047990076, b: 0.051184855, a: 1}
+  m_IndirectSpecularColor: {r: 0.050602514, g: 0.047592975, b: 0.051120732, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016fa07884c16514a9152904ad1bd900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: Contenido
+  button: InGame
   menuMusic: {fileID: 6828421952114474217}
 --- !u!1001 &673663345
 PrefabInstance:
